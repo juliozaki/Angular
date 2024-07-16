@@ -1,0 +1,20 @@
+Para iniciar un nuevo proyecto en Angular debemos de tener instalado NodeJs y el administrador de paquetes NPM (Qué es instalado en conjunto con NodeJs).
+
+Posterior a esto se debe instalar Angular CLI(Command Line Interface):
+
+	npm install -g @angular/cli
+
+
+Crear un nuevo proyecto:
+
+	ng new <project-name>
+
+Ingresar a la carpeta del proyecto, luego compilar y ejecutar el server:
+
+	ng serve
+
+
+
+Este script habilita la ejecución de scripts de PowerShell :
+
+	Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
