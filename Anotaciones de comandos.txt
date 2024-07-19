@@ -33,4 +33,5 @@ Esto dentro del archivo tsconfig.json y en el TAG compilerOptions
 
 Para configurar el directorio base para buscar los objetos que importas en tus archivos, si pones la configuración así, tú directorio base estará ubicado en el mismo folder que tsconfig.json.
 	"baseUrl": "./",                        Esto dentro del archivo tsconfig.json y en el TAG compilerOptions
+	Luego con PATHS configuras un alias para las rutas que son largas por ejemplo: "paths": { "@core/*": ["src/app/core/*"] }
 
