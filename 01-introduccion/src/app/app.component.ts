@@ -13,5 +13,5 @@ import { HomePageComponent } from '@modules/home/pages/home-page/home-page.compo
 
 
 export class AppComponent {
-  title = '01-introduccion';
+  title = 'AppMediaPlayer';
 }
