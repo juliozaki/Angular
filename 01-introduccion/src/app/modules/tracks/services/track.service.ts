@@ -3,14 +3,13 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { map, mergeMap, tap, catchError } from 'rxjs/operators';
-//import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment';
+
 @Injectable({
     providedIn: 'root'
 })
-
 export class TrackService {
-
-    private readonly URL = ''//'http://localhost:3000/api/1.0';//environment.api
+    private readonly URL = environment.api
 
     constructor(private http: HttpClient) {
 

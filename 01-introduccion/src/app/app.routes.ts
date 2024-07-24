@@ -16,5 +16,17 @@ export const routes: Routes = [
             }
         ]
         //canActivate: [SessionGuard]
+    },
+    {
+        path: 'auth/login',//TODO http://localhost:4200/auth/login
+        loadComponent: () => import(`./modules/auth/pages/auth-page/auth-page.component`).then(c => c.AuthPageComponent)
+    },
+    {
+        path: 'auth/',
+        redirectTo: 'auth/login'
+    },
+    {
+        path: '**',
+        redirectTo: 'auth/login'
     }
 ];
