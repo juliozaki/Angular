@@ -26,6 +26,7 @@ export class TracksPageComponent implements OnInit, OnDestroy {
   constructor(private trackService: TrackService) { }
 
   ngOnInit(): void {
+    //console.log('pasa por aca');
     this.loadDataAll() //TODO 📌📌
     this.loadDataRandom() //TODO 📌📌
   }

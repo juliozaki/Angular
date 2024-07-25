@@ -35,3 +35,5 @@ Para configurar el directorio base para buscar los objetos que importas en tus a
 	"baseUrl": "./",                        Esto dentro del archivo tsconfig.json y en el TAG compilerOptions
 	Luego con PATHS configuras un alias para las rutas que son largas por ejemplo: "paths": { "@core/*": ["src/app/core/*"] }
 
+
+Para utilizar el HttpClient para las llamas a las APIs se debe de configurar en el app.config el provideHttpClient
