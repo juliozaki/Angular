@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { SessionGuard } from '@core/guards/session.guard';
 
 export const routes: Routes = [
     {
@@ -13,20 +14,24 @@ export const routes: Routes = [
             {
                 path: 'favorites',
                 loadComponent: () => import('@modules/favorites/pages/favorites-page/favorites-page.component').then(c => c.FavoritePageComponent)
+            },
+            {
+                path: 'history',
+                loadComponent: () => import('@modules/history/pages/history-page/history-page.component').then(c => c.HistoryPageComponent)
             }
-        ]
-        //canActivate: [SessionGuard]
+        ],
+        canActivate: [SessionGuard]
     },
     {
         path: 'auth/login',//TODO http://localhost:4200/auth/login
         loadComponent: () => import(`./modules/auth/pages/auth-page/auth-page.component`).then(c => c.AuthPageComponent)
     },
     {
-        path: 'auth/',
+        path: 'auth',
         redirectTo: 'auth/login'
     },
     {
         path: '**',
-        redirectTo: 'auth/login'
+        redirectTo: 'tracks'
     }
 ];

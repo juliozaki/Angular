@@ -41,6 +41,8 @@ export class AuthPageComponent implements OnInit {
     )
   }
 
+  /// user:          pass:
+  /// test@test.com  12345678
   sendLogin(): void {
     const { email, password } = this.formLogin.value
     this.authService.sendCredentials(email, password)

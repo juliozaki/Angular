@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { TrackModel } from '@core/models/tracks.model';
 import { OrderListPipe } from '@shared/pipes/order-list.pipe';
+//import * as dataRaw from '../../../data/tracks.json';
 
 @Component({
   selector: 'app-play-list-body',
@@ -21,7 +22,8 @@ export class PlayListBodyComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
+    //const { data }: any = (dataRaw as any).default;
+    //this.tracks = data;
   }
 
   changeSort(property: string): void {
